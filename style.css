@@ -49,7 +49,7 @@ We provide SVGs for the social icons. But please feel free to use a font icon li
 body{
     background-color:hsl(210, 46%, 95%);
     font-family: 'Manrope', sans-serif;
-    width: 375px;
+
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -112,7 +112,7 @@ body{
     height: 60px;
     
     display: flex;
-
+    position: relative;
     align-items: center;
 }
 
@@ -134,5 +134,35 @@ body{
 }
 
 .article__share{
-    display: none;
+
+    position: absolute;
+    right: 18px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color:hsl(210, 46%, 95%);
+    
+}
+.article__share img{
+    height: 25px;
+}
+
+
+.article__share--hover{
+  width: 120%;
+  height: 100%;
+display: flex;
+  font: black;
+  background-color: hsl(214, 17%, 51%);
+ margin: 0 .25em;
+
+ align-items: center;
+}
+
+.article__share--hover p {
+    display: inline-block;
+    padding: 0 .2em;
+    color: hsl(210, 46%, 95%) ;
+}
+.article__share--hover img{
+    padding: 1.5em .75em;
 }
