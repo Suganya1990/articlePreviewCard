@@ -148,9 +148,10 @@ body{
 
 
 .article__share--hover{
+    
   width: 120%;
   height: 100%;
-display: flex;
+display: none;
   font: black;
   background-color: hsl(214, 17%, 51%);
  margin: 0 .25em;
