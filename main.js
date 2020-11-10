@@ -10,7 +10,7 @@ const shareHover = document.querySelector('.article__share--hover')
 share.onmouseover = () =>{
     author.style.display = 'none';
     authorInfo.style.display = 'none';
-    shareHover.style.display = 'flex-block'
+    shareHover.style.display = 'flex'
 
 }
 
