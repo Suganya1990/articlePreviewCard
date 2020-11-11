@@ -151,11 +151,12 @@ body{
     
   width: 120%;
   height: 100%;
-  display: none;
   font: black;
   background-color: hsl(214, 17%, 51%);
  margin: 0 .25em;
  align-items: center;
+ display: none;
+
 }
 
 .article__share--hover p {
@@ -166,3 +167,29 @@ body{
 .article__share--hover img{
     padding: 1.5em .75em;
 }
+
+
+@media only screen and (min-width: 555px) {
+
+    .article__container{
+
+        width: 700px;
+        height: 28%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .article__imgContainer{
+        width:650px;
+        flex-direction: row;
+        height:100%;
+    }
+    .article__title{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .article__snippet{
+        font-size: .6rem;
+    }
+ 
+  }
