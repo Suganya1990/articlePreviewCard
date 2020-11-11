@@ -128,11 +128,15 @@ body{
 .article__avatar img{
     height: 100%;
     width: 100%;
-    
-
-
+}
+.article__author__name{
+    color:  hsl(217, 19%, 35%);
+    margin-bottom: .25em;
 }
 
+.article__published-date{
+    color:  hsl(212, 23%, 69%);
+}
 .article__share{
 
     position: absolute;
@@ -141,14 +145,9 @@ body{
     padding: 5px;
     background-color:hsl(210, 46%, 95%);
     color: white;
+    fill:  hsl(214, 17%, 51%);
+}
 
-    
-}
-.article__share img{
-    height: 25px;
-    
-   
-}
 .article__share--hover{
 
   width: 120%;
@@ -180,17 +179,21 @@ body{
 @media only screen and (min-width: 555px) {
 
     .article__container{
-
+        position: absolute;
         width: 700px;
         height: 28%;
         display: flex;
         flex-direction: row;
+     
     }
 
     .article__imgContainer{
         width:650px;
         flex-direction: row;
         height:100%;
+    }
+    .article__content{
+       
     }
     .article__title{
         font-size: 1rem;
@@ -199,23 +202,27 @@ body{
     .article__snippet{
         font-size: .6rem;
     }
+     
+    
+    .article__avatar{
+
+    }
     .article__info{
-        position: relative;
         
     }
+    
 
     .article__share--hover{
-        position: absolute;
+        position: relative;
         height: 45px;
         width: 220px;
         border-radius: unset;
-        bottom: 80px;
-        left: 250px;
-        z-index: 100;
         background-color: hsl(217, 19%, 35%);
         border-radius: 10px;
-  
-
+        z-index: 10;
+        top: -80px;
+        right: -200px;
     }
- 
+
+
   }
