@@ -176,14 +176,15 @@ body{
 }
 
 
-@media only screen and (min-width: 555px) {
+@media only screen and (min-width: 500px) {
 
     .article__container{
-        position: absolute;
+        position: relative;
         width: 700px;
         height: 28%;
         display: flex;
         flex-direction: row;
+        overflow: visible;
      
     }
 
@@ -192,9 +193,7 @@ body{
         flex-direction: row;
         height:100%;
     }
-    .article__content{
-       
-    }
+   
     .article__title{
         font-size: 1rem;
         line-height: 1.5rem;
@@ -203,26 +202,38 @@ body{
         font-size: .6rem;
     }
      
-    
-    .article__avatar{
+    .article__info{
+        position: static;
 
     }
-    .article__info{
-        
-    }
-    
+   .article__share{
+    position: absolute;
+   }
 
     .article__share--hover{
-        position: relative;
+        position: absolute;
         height: 45px;
         width: 220px;
         border-radius: unset;
         background-color: hsl(217, 19%, 35%);
         border-radius: 10px;
-        z-index: 10;
-        top: -80px;
-        right: -200px;
+       top: 50%;
+       right:-50px;
+   
     }
+
+    .article__share--hover::after{
+        content: ' ';
+        width: 0; 
+        height: 0; 
+        border-left: 13px solid transparent;
+        border-right: 13px solid transparent;
+        border-top: 13px solid hsl(217, 19%, 35%);
+        position: absolute;
+        top: 100%;
+        left: 48%;
+    }
+
 
 
   }
