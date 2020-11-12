@@ -24,7 +24,9 @@ share.onmouseover = () =>{
  else{
     author.style.display = 'block';
     authorInfo.style.display = 'block';
-    shareHover.style.display = 'block'
+    shareHover.style.display = 'flex'
+   
+   
  }
 
 }
