@@ -110,10 +110,10 @@ body{
 
 .article__info{
     height: 60px;
-    
     display: flex;
     position: relative;
     align-items: center;
+    
 }
 
 .article__avatar{
@@ -179,9 +179,10 @@ body{
 @media only screen and (min-width: 1028px) {
 
     .article__container{
+       
         position: relative;
-        width: 750px;
-        height: 35%;
+        width: 700px;
+        height: 31%;
         display: flex;
         flex-direction: row;
         overflow: visible;
@@ -194,20 +195,26 @@ body{
         height:100%;
     }
    
+  .article__content{
+      padding-top: 10px;
+  }
     .article__title{
         font-size: 1rem;
         line-height: 1.5rem;
+        margin-bottom: 0;
     }
     .article__snippet{
-        font-size: .6rem;
+        font-size: .6rem; 
+        margin-bottom: 10px;
     }
      
     .article__info{
-        position: static;
+       bottom: 0;
 
     }
    .article__share{
     position: absolute;
+    
    }
 
     .article__share--hover{
